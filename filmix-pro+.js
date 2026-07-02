@@ -25,10 +25,10 @@ hostname = appv3.filmix.com.cn
 let obj = JSON.parse($response.body);
 
 obj.is_vip = true;
-obj.vip_level = 2;  // Pro+ 等级（原为1=普通VIP）
+obj.vip_level = 3;
 obj.vip_start_time = "2025-01-01T00:00:00.000Z";
 obj.vip_end_time = "2099-12-31T23:59:59.999Z";
 obj.first_vip_start_time = "2025-01-01T00:00:00.000Z";
-obj.user.vip_level = 2;  // Pro+ 等级（原为1=普通VIP）
+obj.user.vip_level = 3;
 
 $done({body: JSON.stringify(obj)});
